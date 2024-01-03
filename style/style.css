@@ -1,0 +1,435 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0 auto;
+  max-width: 1440px; /* You can adjust this value to set a maximum content width */
+  background-color: #000000;
+ 
+}
+
+a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+h1 {
+  font-size: 4rem;
+}
+/* Navigation Bar */
+.nav-list {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav-list a {
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.nav-list .logo a {
+  color: #e91f4e;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.nav-list a:hover {
+  color: #e91f4e;
+}
+
+.nav-link {
+  display: flex;
+  gap: 50px;
+}
+
+.menubtn {
+  display: none;
+}
+
+/* Sidebar */
+
+.toogle-menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #000000;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.toogle-menu a {
+  display: block;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #fff;
+  padding: 10px;
+  text-align: left;
+}
+
+.toogle-menu .close {
+  position: absolute;
+  margin-right: 200px;
+  top: 0;
+  font-size: 32px;
+}
+
+/* Hero Section */
+.hero-list {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.hero-list .hero-image img {
+  width: 600px;
+}
+
+.hero-list .hero-title p {
+  font-size: 1.5rem;
+}
+
+.hero-list .hero-title h1 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 6.5rem;
+}
+
+.hero-section .hero-title button {
+  background-color: #e91f4e;
+  font-size: 1rem;
+  padding: 10px;
+  width: 150px;
+  border-radius: 5px;
+  border: 0;
+  margin-top: 10px;
+}
+
+.hero-section .hero-title button:hover {
+  background-color: #c4113b;
+}
+/* Tech */
+.tech-list {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 50px;
+ 
+}
+.tech-list img {
+  width: 60px;
+  height: 100%;
+  transition: transform 0.2s;
+}
+
+.tech-list img:hover {
+  transform: scale(1.5);
+}
+/* About Me */
+
+.about-me {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #000000;
+  margin-bottom: 50px;
+}
+
+.about-me .about-me-image img {
+  width: 400px;
+  border-radius: 50%;
+}
+
+.about-me-p {
+  flex-basis: 900px;
+}
+
+.about-me-p p {
+  font-size: 1.5rem;
+  text-align: justify;
+}
+/* Project */
+
+.project-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+.card{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 450px;
+  height: 450px;  
+  background-color: #191923;
+  /* flex: 1;
+  flex-basis: 450px; */
+  overflow: hidden;
+  transition: transform 0.2s;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+.card:hover{
+  transform: scale(1.05);
+}
+.card a:hover{
+  color: #fff;
+}
+.card button{
+  background-color: #e91f4e;
+  border: 0;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.card p{
+  padding: 5px;
+  text-align: center;
+}
+.securesign{
+  background-image: url(../assets/images/ss.png);
+  background-size: cover;
+  background-position: left;
+  width: 450px;
+  height: 450px;
+  z-index: 1;
+  opacity: 0.5;
+}
+.weatherapp{
+  background-image: url(../assets/images/wa.png);
+  background-size: cover;
+  background-position: center;
+  width: 450px;
+  height: 450px;
+  z-index: 1;
+  opacity: 0.5;
+}
+
+.hotelwebsite{
+  background-image: url(../assets/images/hw.png);
+  background-size: cover;
+  background-position: center;
+  width: 450px;
+  height: 450px;
+  z-index: 1;
+  opacity: 0.5;
+}
+.reactkeeper{
+  background-image: url(../assets/images/kpa.png);
+  background-size: cover;
+  background-position: center;
+  width: 450px;
+  height: 450px;
+  z-index: 1;
+  opacity: 0.5;
+}
+
+.simongame{
+  background-image: url(../assets/images/sg.png);
+  background-size: cover;
+  background-position: center;
+  width: 450px;
+  height: 450px;
+  z-index: 1;
+  opacity: 0.5;
+}
+.drumkit{
+  background-image: url(../assets/images/dk.png);
+  background-size: cover;
+  background-position: center;
+  width: 450px;
+  height: 450px;
+  z-index: 1;
+  opacity: 0.5;
+}
+/* Contact List */
+
+.contact-list{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 40vh;
+  flex-wrap: wrap;
+  gap: 20px;
+ 
+}
+.soc-med p{
+  font-size: 1.5rem;
+  padding-bottom: 50px;
+}
+.socmed{
+  margin-top: 20px;
+ display: block;
+}
+
+i{
+  color: #e91f4e;
+  font-size: 30px;
+   margin-right: 10px;
+}
+
+@media only screen and (max-width: 766px) {
+  .nav-link a:not(:last-child) {
+    display: none;
+  }
+
+  .menubtn {
+    display: block;
+  }
+
+  .hero-list {
+    display: flex;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .hero-list .hero-title p {
+    font-size: 1rem;
+  }
+
+  .hero-list .hero-title h1 {
+    font-size: 2rem;
+  }
+
+  .hero-list .hero-image img {
+    width: 300px;
+  }
+
+  .hero-section .hero-title button {
+    font-size: 1rem;
+  }
+  .about-me .about-me-image img {
+    width: 300px;
+  }
+  h1{
+    font-size: 2rem;
+  }
+  .about-me-p p {
+    font-size: 1rem;
+   
+  }
+  .about-me-p{
+    padding: 20px;
+  }
+  .about-me{
+    height: 100%;
+  }
+  .project-list{
+    padding: 20px;
+    height: 100%;
+  }
+  .project{
+    padding: 20px;
+    height: 100%;
+  }
+
+  .contact-list{
+    padding: 20px;
+    height: 100%;
+  }
+}
+ 
+
+@media only screen and (max-width: 600px) {
+  .nav-link a:not(:last-child) {
+    display: none;
+  }
+
+  .menubtn {
+    display: block;
+  }
+
+  .hero-list {
+    display: flex;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .hero-list .hero-title p {
+    font-size: 1rem;
+  }
+
+  .hero-list .hero-title h1 {
+    font-size: 2rem;
+  }
+
+  .hero-list .hero-image img {
+    width: 300px;
+  }
+
+  .hero-section .hero-title button {
+    font-size: 1rem;
+  }
+  .about-me .about-me-image img {
+    width: 300px;
+  }
+  h1{
+    font-size: 2rem;
+  }
+  .about-me-p p {
+    font-size: 1rem;
+   
+  }
+  .about-me-p{
+    padding: 20px;
+  }
+  .about-me{
+    height: 100%;
+  }
+  .project-list{
+    padding: 20px;
+    height: 100%;
+  }
+  .project{
+    padding: 20px;
+    height: 100%;
+  }
+  .contact-list{
+    padding: 20px;
+    height: 100%;
+  }
+  
+  
+}
+
