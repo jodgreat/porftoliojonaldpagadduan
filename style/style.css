@@ -192,21 +192,22 @@ h1 {
   gap: 20px;
   flex-wrap: wrap;
   margin-bottom: 100px;
+  padding: 0px 100px 0px 100px;
 }
 .card{
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 450px;
-  height: 450px;  
+  width: 400px;
+  height: 400px;  
   background-color: #191923;
   /* flex: 1;
   flex-basis: 450px; */
   overflow: hidden;
   transition: transform 0.2s;
   border-radius: 10px;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 .card:hover{
   transform: scale(1.05);
@@ -226,6 +227,70 @@ h1 {
 .card p{
   padding: 5px;
   text-align: center;
+  font-size: 1rem;
+}
+.card h2{
+  margin-top: 10px;
+}
+.card img{
+  width: 100%;
+}
+
+.slic{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: fit-content; 
+  background-color: #191923;
+  /* flex: 1;
+  flex-basis: 450px; */
+  overflow: hidden;
+  transition: transform 0.2s;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.slic img{
+  width: 100%;
+}
+.illustration{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+ 
+  background-color: #191923;
+  overflow: hidden;
+  transition: transform 0.2s;
+  border-radius: 10px;
+  margin-top: 10px; 
+}
+.illustration img{
+  width: 100%; 
+}
+.illustration:hover{
+  transform: scale(1.05);
+}
+
+.bob{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 600px;
+  height: 400px;  
+  background-color: #191923;
+  overflow: hidden;
+  transition: transform 0.2s;
+  border-radius: 10px;
+  margin-top: 10px; 
+}
+.bob img{
+  width: 100%;
+}
+.bob:hover{
+  transform: scale(1.05);
 }
 .securesign{
   background-image: url(../assets/images/ss.png);
@@ -307,6 +372,20 @@ i{
   color: #e91f4e;
   font-size: 30px;
    margin-right: 10px;
+}
+
+.proj-nav{
+  position: -webkit-sticky;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.proj-nav > a:hover{
+  color: #c4113b;
 }
 
 @media only screen and (max-width: 766px) {
@@ -430,6 +509,12 @@ i{
     height: 100%;
   }
   
-  
+  .proj-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
